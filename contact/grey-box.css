@@ -1,0 +1,122 @@
+* {
+  background: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+body {
+  display: flex;
+}
+nav { 
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-left: -10px;
+}
+
+nav > a {
+  background-color: black;
+  margin: 6px;
+  padding: 5px;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  margin: auto;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  margin-left: auto;
+}
+
+ul {
+  list-style: none;
+  font-size: 17px;
+}
+
+li {
+  line-height: 32px;
+  text-decoration: none;
+}
+
+ul :nth-child(1) {
+  font-size: 22px;
+  margin-left: -10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+#git-id {
+  font-size: 16px;
+  text-decoration: none;
+  color: royalblue;
+}
+
+#short-email > a {
+  text-decoration: none;
+  font-size: 16px;
+  color: royalblue;
+}
+
+#full-email {
+  display: none;
+}
+#linked-in > span {
+  color: darkblue;
+  margin-left: 0px;
+}
+
+#linked-in {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: fixed;
+  z-index: 2;
+}
+
+#ribbon {
+  transform: scale(.8,.8);
+  margin-top: -75px;
+}
+
+@media screen and (min-width: 520px) {
+  nav > a {
+      font-size: 15px;
+  }
+
+  ul{
+      margin-top: 55px;
+  }
+
+  li {
+      font-size: larger;
+  }
+
+  #short-email {
+      display: none;
+  }
+
+  #full-email {
+      display: unset;
+  }
+  #full-email > a {
+      text-decoration: none;
+      font-size: 16px;
+      color: royalblue;
+  }
+
+  #logo > img {
+      margin-top: 30px;
+  }
+
+  #ribbon{
+      transform: scale(1,1);
+      margin-top: -22px;
+      margin-left: 55px;
+}
+}

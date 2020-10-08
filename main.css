@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+body {
+  width: 300px;
+  margin: auto;
+  overflow: auto;
+  height: 600px;
+  margin-top: 30px;
+
+}
+header {
+  background: lightgray;
+  border: 2px solid black;
+  margin-bottom: 3px;
+  border-radius: 8px;
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  background: lightgray;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: lighter;
+  background: lightgray;
+  text-align: center;
+}
+
+div > a {
+  background: black; 
+  font: white;
+  padding-left:8px;
+  padding-right: 8px;
+  padding-top: 3px;
+}
+
+#logo > a {
+  background: none; 
+  font: none;
+  padding-left:8px;
+  padding-right: 8px;
+  padding-top: 3px;
+}
+
+#logo2 > a {
+  background: none; 
+  font: none;
+  padding-left:8px;
+  padding-right: 8px;
+  margin-top: 60px;
+}
+
+#logo3 > a {
+  background: none; 
+  font: none;
+  padding-left:8px;
+  padding-right: 8px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+#top-side {
+  display: flex;
+  flex-direction: row;
+  width: 296px;
+  justify-content: space-between;
+  background: lightseagreen;
+}
+
+#bottom-side {
+  display: flex;
+  flex-direction: row;
+  width: 296px;
+  justify-content: space-between;
+  background: lightskyblue;
+}
+
+a {
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+  line-height: 32px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  flex-shrink: 1.1;
+  
+}
+
+img {
+  border-radius: 10%;
+}
+
+#my-face {
+  transform: scale(.6,.6) rotate(355deg);
+  max-width: 200px;
+  max-height: 200px;
+  margin-left: -60px;
+  margin-top: 20px;
+  position: fixed;
+  z-index: 1;
+}
+
+input {
+  border-radius: 46%;
+  background: black;
+  margin-left: 80px;
+}
+#logo > a {
+  
+  margin-left: -60px;
+}
+#logo3 > a {
+  
+  margin-left: -60px;
+}
+#logo {
+  transform: scale(.7,.7) rotate(15deg);
+  margin-top: 150px;
+  position: fixed;
+  z-index: 2;
+  background: none;
+}
+
+#logo2 {
+  transform: scale(1.2,1.2);
+  margin-top: 20px;
+  margin-left: 100px;
+  position: fixed;
+  z-index: 4;
+  background: none;
+}
+
+#logo3 {
+  transform: rotate(345deg);
+  margin-top: 40px;
+  margin-left: 155px;
+  position: fixed;
+  z-index: 3;
+  background: none;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+      width: 700px;
+  }
+
+  h1 {
+      text-align: right;
+      font-size: 36px;
+      margin-right: 170px;
+  }
+
+  header {
+      width: 650px;
+      margin: 3.5%;
+  }
+
+  nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background: lightblue;
+  }
+
+  #top-side {
+      width: 219px;
+
+  }
+
+  #bottom-side {
+      width: 309px;
+  }
+
+  main {
+      display: flex;
+      flex-direction: row;
+      width: 800px;
+      margin: auto;
+  }
+
+  img {
+      border-radius: 10%;
+  }
+
+  #my-face {
+      border-radius: 10%;
+      transform: rotate(355deg);
+      max-width: 300px;
+      max-height: 300px;
+      margin-left: 20px;
+      margin-top: 40px;
+  }
+  
+  #logo {
+      transform: scale(1,1) rotate(15deg);
+      margin-top: 50px;
+      margin-left: 410px;
+      position: flex;
+  }
+  
+  #logo2 {
+      transform: scale(2.8,2.8);
+      margin-top: 40px;
+      margin-left: 360px;
+  }
+  
+  #logo3 {
+      transform: rotate(345deg);
+      margin-top: 290px;
+      margin-left: 555px;
+  }
+}
+
+
+@media screen and (max-height: 650px) {
+
+
+  #my-face {
+      transform: scale(.6,.6) rotate(355deg);
+      margin-top: 0px;
+  }
+  
+  #logo2 {
+      transform: scale(1.2,1.2);
+      margin-top: 20px;
+      margin-left: 100px;
+  }
+  
+  #logo3 {
+      transform: rotate(345deg);
+      margin-top: 10px;
+      margin-left: 175px;
+  }
+}
+/*next-tallest*/
+@media screen and (max-height: 570px) {
+  #my-face {
+      transform: scale(.6,.6) rotate(355deg);
+      margin-top: -20px;
+  }
+  #logo {
+      transform: scale(.6,.6) rotate(15deg);
+      margin-top: 114px;
+  }
+  #logo2 {
+      transform: scale(1.2,1.2);
+      margin-top: 20px;
+      margin-left: 100px;
+  }
+  
+  #logo3 > a {
+      transform: rotate(345deg);
+      margin-left: -45px;
+  }
+}
+@media screen and (max-height: 477px) {
+  body {
+      margin-top: 10px;
+  }
+  #my-face {
+      display: none;
+  }
+  
+  #logo {
+      display: none;
+  }
+  
+  #logo2 {
+      display: none;
+  }
+  
+  #logo3 {
+      display: none;
+  }
+
+  h2 {
+      margin-bottom: 60px;
+      margin-top: 60px;
+  }
+}
